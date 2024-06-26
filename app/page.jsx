@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import Image from "next/image";
-import hero_img from "../app/images/hero_img.svg";
+// import hero_img from "../app/images/hero_img.svg";
+import hero_img from "../../01portfolio/public/hero_img.svg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -65,13 +66,13 @@ export default function Home() {
               </div>
             </div>
             {/* svg image */}
-            <div className=" mt-12 mx-auto lg:mt-8 xl:mt-0 ">
+            {/* <div className=" mt-12 mx-auto lg:mt-8 xl:mt-0 ">
               <div className=" w-full h-full relative ">
                 <div className=" w-[298px] h-[298px] xl:w-[498px] ">
                   <Image src={hero_img} alt="hero img" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </motion.div>
