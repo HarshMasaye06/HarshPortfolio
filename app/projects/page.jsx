@@ -44,9 +44,8 @@ const projects = [
     description: "This is a project description",
     domain: "Fullstack",
     stack: [
-      "HTML 5",
-      "Tailwind Css",
       "React Js",
+      "Tailwind Css",
       "Node.js",
       "Express",
       "MongoDB",
@@ -95,11 +94,12 @@ const Projects = () => {
                 {project.domain}
               </h2>
               <p className="text-white/60">{project.description}</p>
-              <ul className=" flex gap-4 text-accent">
+              <ul className="py-1 flex flex-wrap xl:flex-none gap-2 xl:gap-4 text-accent whitespace-nowrap">
                 {project.stack.map((items, index) => (
-                  <li key={index}>
+                  <li key={index} className=" text-sm xl:text-md" >
                     {items}
                     {index !== project.stack.length - 1 ? "," : "."}
+                    {/* {(index + 1) % 4 === 0 && index !== project.stack.length - 1 && <br />} */}
                   </li>
                 ))}
               </ul>
