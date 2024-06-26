@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import Image from "next/image";
-import hero_img from "../../01portfolio/public/hero_img.svg";
+import hero_img from "../app/images/hero_img.svg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
