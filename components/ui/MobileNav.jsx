@@ -8,7 +8,7 @@ import { Button } from "./button";
 
 const links = [
   { path: "/", name: "home" },
-  { path: "/services", name: "services" },
+  // { path: "/services", name: "services" },
   { path: "/resume", name: "resume" },
   { path: "/projects", name: "projects"},
   { path: "/contact", name: "contact" },
