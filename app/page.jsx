@@ -8,14 +8,14 @@ import Socials from "@/components/ui/Socials";
 
 export default function Home() {
   return (
-    <main>
+    <main  >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
           transition: { delay: 0.4, duration: 0.4, ease: "easeInOut" },
         }}
-        className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+        className="min-h-[80vh]  flex items-center justify-center py-12 xl:py-0"
       >
         <div className=" container">
           <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-0 ">

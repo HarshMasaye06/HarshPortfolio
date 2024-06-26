@@ -20,21 +20,21 @@ import SliderButtonsCustom from "@/components/ui/SliderButtonsCustom";
 const projects = [
   {
     no: "01",
-    title: "Project 1",
+    title: "Portfolio",
     description: "This is a project description",
     domain: "Frontend",
-    stack: ["HTML 5", "Tailwind Css", "React Js"],
-    image: "",
+    stack: ["HTML 5", "Tailwind Css", "Next Js"],
+    image_src: "/assets/01ProjectPortfolio.png",
     github: "https://github.com/harshmasaye06",
     live: "",
   },
   {
     no: "02",
-    title: "Project 2",
+    title: "Z-mart shopping app",
     description: "This is a project description",
     domain: "Backend",
-    stack: ["Node.js", "Express", "MongoDB"],
-    image: "",
+    stack: ["React js", "Node.js", "Express", "MongoDB"],
+    image_src: "",
     github: "https://github.com/harshmasaye06",
     live: "",
   },
@@ -43,14 +43,8 @@ const projects = [
     title: "Project 3",
     description: "This is a project description",
     domain: "Fullstack",
-    stack: [
-      "React Js",
-      "Tailwind Css",
-      "Node.js",
-      "Express",
-      "MongoDB",
-    ],
-    image: "",
+    stack: ["React Js", "Tailwind Css", "Node.js", "Express", "MongoDB"],
+    image_src: "",
     github: "https://github.com/harshmasaye06",
     live: "",
   },
@@ -60,7 +54,7 @@ const projects = [
     description: "This is a project description",
     domain: "Frontend",
     stack: ["HTML 5", "Tailwind Css", "React Js"],
-    image: "",
+    image_src: "",
     github: "https://github.com/harshmasaye06",
     live: "",
   },
@@ -86,18 +80,19 @@ const Projects = () => {
       <div className=" container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]  ">
           <div className=" w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none ">
-            <div>
+            <div className=" lg:mt-14">
               <div className=" text-8xl leading-none font-extrabold ">
                 {project.no}
               </div>
               <h2 className=" text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize ">
                 {project.domain}
               </h2>
+              <h2>‹ {project.title} ›</h2>
               <p className="text-white/60">{project.description}</p>
               <ul className="py-1 flex flex-wrap xl:flex-none gap-2 xl:gap-4 text-accent whitespace-nowrap">
-                {project.stack.map((items, index) => (
-                  <li key={index} className=" text-sm xl:text-md" >
-                    {items}
+                {project.stack.map((item, index) => (
+                  <li key={index} className={`${project.stack.length > 4 && "max-w-[150px]"} text-sm xl:text-md`}>
+                    {item}
                     {index !== project.stack.length - 1 ? "," : "."}
                     {/* {(index + 1) % 4 === 0 && index !== project.stack.length - 1 && <br />} */}
                   </li>
@@ -149,12 +144,13 @@ const Projects = () => {
                 <SwiperSlide key={index}>
                   <div className=" h-[460px] relative group flex justify-center items-center bg-pink-50/20 ">
                     {/* overlay */}
-                    <div></div>
+                    <div className=""></div>
                     {/* image */}
-                    <div className=" re w-full h-full">
+                    <div className=" relative shadow-sm w-full h-full">
                       <Image
-                        src={project.image}
+                        src={project.image_src}
                         fill
+                        quality={100}
                         className=" object-cover"
                         alt="img"
                       />
