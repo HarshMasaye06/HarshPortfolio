@@ -68,7 +68,7 @@ export default function Home() {
             <div className=" mt-12 mx-auto lg:mt-8 xl:mt-0 ">
               <div className=" w-full h-full relative ">
                 <div className=" w-[298px] h-[298px] xl:w-[498px] ">
-                  <Image src={hero_img} />
+                  <Image src={hero_img} alt="hero img" />
                 </div>
               </div>
             </div>
