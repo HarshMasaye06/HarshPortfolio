@@ -43,10 +43,11 @@ const experience = {
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magnam ullam dolorum assumenda.",
   info: [
-    { company: "Meta", role: "", duration: "2024 - Present" },
-    { company: "Amazon", role: "", duration: "2023 - 2024" },
-    { company: "Google", role: "", duration: "2021 - 2023" },
-    { company: "SalesForce", role: "", duration: "2018 - 2021" },
+    { company: "None", role: "Fresher", duration: "Present" },
+    // { company: "Meta", role: "", duration: "2024 - Present" },
+    // { company: "Amazon", role: "", duration: "2023 - 2024" },
+    // { company: "Google", role: "", duration: "2021 - 2023" },
+    // { company: "SalesForce", role: "", duration: "2018 - 2021" },
   ],
 };
 
