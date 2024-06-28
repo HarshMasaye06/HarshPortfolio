@@ -5,10 +5,11 @@ import { Button } from "@/components/ui/button";
 import { FaDownload } from "react-icons/fa";
 import Stats from "@/components/ui/Stats";
 import Socials from "@/components/ui/Socials";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main  >
+    <main>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -33,14 +34,17 @@ export default function Home() {
                 cutting-edge development techniques.
               </p>
               <div className=" flex flex-col xl:flex-row items-center gap-4 mt-4 ">
-                <Button
-                  varient="outline"
-                  // size="md"
-                  className="uppercase h-10 flex items-center gap-2 rounded-full text-md bg-primary text-accent outline outline-[1px] outline-accent hover:bg-accent-hover hover:text-primary hover:transition-all duration-500 "
+                <motion.a
+                  href="./assets/Harsh Masaye Resume Main.pdf"
+                  target="blank"
+                  alt="my CV"
+                  rel="noopener noreferrer"
+                  whileTap={{ scale: 0.95 }}
+                  className="uppercase h-11 w-40 flex justify-center items-center gap-2 rounded-full text-md bg-primary text-accent outline outline-[1px] outline-accent hover:bg-accent-hover hover:text-primary hover:transition-all duration-500 "
                 >
                   <span>Download CV</span>
                   <FaDownload className="text-md" />
-                </Button>
+                </motion.a>
                 <div className="flex">
                   <Socials />
                 </div>
