@@ -43,7 +43,7 @@ const experience = {
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magnam ullam dolorum assumenda.",
   info: [
-    { company: "None", role: "Fresher", duration: "Present" },
+    { company: "", role: "Fresher", duration: "Present" },
     // { company: "Meta", role: "", duration: "2024 - Present" },
     // { company: "Amazon", role: "", duration: "2023 - 2024" },
     // { company: "Google", role: "", duration: "2021 - 2023" },
@@ -111,10 +111,10 @@ const Resume = () => {
             <div className=" text-2xl xl:text-4xl font-semibold">Why hire me.?</div>
             <div className=" text-sm xl:text-md text-white/60 leading-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, earum.</div>
             <TabsList className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-1 lg:w-[350px] lg:h-[180px] lg:mx-auto xl:mx-0 gap-4">
-              <TabsTrigger value="experience"> experience </TabsTrigger>
               <TabsTrigger value="education"> education </TabsTrigger>
               <TabsTrigger value="skills"> skills </TabsTrigger>
               <TabsTrigger value="about"> about </TabsTrigger>
+              <TabsTrigger value="experience"> experience </TabsTrigger>
             </TabsList>
           </div>
 
@@ -140,7 +140,7 @@ const Resume = () => {
 
                         <div className=" flex flex-col items-start gap-1 ">
                           <h4 className="text-xl font-extrabold capitalize">
-                            job title
+                            {item.role}
                           </h4>
                           <p>
                             <span className="text-accent text-4xl">.</span>
