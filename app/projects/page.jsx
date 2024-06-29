@@ -14,6 +14,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 import Image from "next/image";
 import SliderButtonsCustom from "@/components/ui/SliderButtonsCustom";
 
@@ -25,18 +26,20 @@ const projects = [
     domain: "Frontend",
     stack: ["HTML 5", "Tailwind Css", "Next Js", "Framer motion"],
     image_src: "/assets/01ProjectPortfolio.png",
-    github: "https://github.com/harshmasaye06",
-    live: "",
+    github: "https://github.com/HarshMasaye06/HarshPortfolio.git",
+    live: true,
+    liveLink: "https://harshmasaye-portfolio.vercel.app/",
   },
   {
     no: "02",
     title: "Z-mart shopping app",
     description: "This is a project description",
-    domain: "Backend",
-    stack: ["React js","Framer motion", "Node.js", "Express", "MongoDB"],
+    domain: "Fullstack",
+    stack: ["React js", "Framer motion", "Node.js", "Express", "MongoDB"],
     image_src: "/assets/02ProjectEcommerce.png",
-    github: "https://github.com/harshmasaye06",
-    live: "",
+    github: "https://github.com/HarshMasaye06/ZmartShoppingWebApp.git",
+    live: false,
+    liveLink: "",
   },
   {
     no: "03",
@@ -47,6 +50,7 @@ const projects = [
     image_src: "",
     github: "https://github.com/harshmasaye06",
     live: "",
+    liveLink: "",
   },
   {
     no: "04",
@@ -57,6 +61,7 @@ const projects = [
     image_src: "",
     github: "https://github.com/harshmasaye06",
     live: "",
+    liveLink: "",
   },
 ];
 
@@ -91,7 +96,12 @@ const Projects = () => {
               <p className="text-white/60">{project.description}</p>
               <ul className="py-1 flex flex-wrap xl:flex-none gap-2 xl:gap-4 text-accent whitespace-nowrap">
                 {project.stack.map((item, index) => (
-                  <li key={index} className={`${project.stack.length > 4 && "max-w-[150px]"} text-sm xl:text-md`}>
+                  <li
+                    key={index}
+                    className={`${
+                      project.stack.length > 4 && "max-w-[150px]"
+                    } text-sm xl:text-md`}
+                  >
                     {item}
                     {index !== project.stack.length - 1 ? "," : "."}
                     {/* {(index + 1) % 4 === 0 && index !== project.stack.length - 1 && <br />} */}
@@ -101,22 +111,32 @@ const Projects = () => {
               <div className="border border-white/20"></div>
               <div className=" flex gap-2 py-2">
                 {/* Live projects */}
-                <Link href={project.live}>
+                <Link href={project.liveLink}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="bg-white/5 p-3 rounded-full rotate-45 hover:rotate-0 hover:bg-accent-hover hover:text-black transition-all ease-in-out duration-300">
-                        <FiArrowUpRight className=" text-2xl" />
+                        {project.live ? (
+                          <FiArrowUpRight className=" text-2xl" />
+                        ) : (
+                          <IoClose className=" text-2xl rotate-180 " />
+                        )}
                       </TooltipTrigger>
                       <TooltipContent>
+                        {project.live?
                         <p className="bg-white text-primary px-2 py-1 rounded-lg">
                           Live project
                         </p>
+                        :
+                        <p className="bg-white text-primary px-2 py-1 rounded-lg">
+                          Not live yet
+                        </p>
+                        }
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
                 {/* Github repo */}
-                <Link href={project.github}>
+                <Link href={project.github} target="blank" >
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="bg-white/5 p-3 rounded-full hover:bg-accent-hover hover:text-black">

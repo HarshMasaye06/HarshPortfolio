@@ -1,9 +1,7 @@
 "use client";
 
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiMongodb,SiTailwindcss,SiExpress } from "react-icons/si";
-// import { PiBrainBold, PiStudentBold } from "react-icons/pi";
-// import { IoPersonCircleOutline } from "react-icons/io5";
+import { SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -18,11 +16,11 @@ import { motion } from "framer-motion";
 const about = {
   title: "About Me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magnam ullam dolorum assumenda.",
+    "Passionate and dedicated individual with a keen interest in Software Development. Eager to apply academic knowledge to real-world challenges and continuously enhance skills in the technology field.",
   info: [
     { title: "Name", value: "Harsh Masaye" },
     { title: "Email", value: "harshmasaye06@gmail.com" },
-    { title: "Phone", value: "+123 456 7890" },
+    { title: "Phone", value: "+91 8104005291" },
     { title: "Experience", value: "Fresher" },
     {
       title: "LinkedIn",
@@ -41,9 +39,9 @@ const experience = {
   icon: "assets/icons/badge.svg",
   title: "Experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magnam ullam dolorum assumenda.",
+    "Although I am a fresher, my college projects have provided me with a solid foundation in AI and Data Science. I am enthusiastic about leveraging my knowledge to contribute to innovative projects and grow within the tech industry.",
   info: [
-    { company: "", role: "Fresher", duration: "Present" },
+    { company: "College Projects", role: "Fresher", duration: "Present" },
     // { company: "Meta", role: "", duration: "2024 - Present" },
     // { company: "Amazon", role: "", duration: "2023 - 2024" },
     // { company: "Google", role: "", duration: "2021 - 2023" },
@@ -55,7 +53,7 @@ const education = {
   icon: "assets/icons/badge.svg",
   title: "Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magnam ullam dolorum assumenda.",
+    "With a strong educational background in Information Technology, I am well-equipped with the knowledge and skills needed to excel in the tech industry.",
   info: [
     {
       university: "Vasantdada patil pratisthan College of Engg.",
@@ -72,6 +70,7 @@ const education = {
       degree: "SSC",
       duration: "2008-2018",
     },
+    
   ],
 };
 
@@ -79,15 +78,15 @@ const skills = {
   icon: "assets/icons/badge.svg",
   title: "Skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos magnam ullam dolorum assumenda.",
+    "Proficient in a variety of modern web technologies and tools. Always eager to learn and adapt to new technologies. Skilled in both front-end and back-end development.",
   info: [
     { title: "HTML", icon: <FaHtml5 /> },
     { title: "CSS", icon: <FaCss3 /> },
-    { title: "tailwind css", icon: <SiTailwindcss />},
+    { title: "tailwind css", icon: <SiTailwindcss /> },
     { title: "JavaScript", icon: <FaJs /> },
     { title: "React", icon: <FaReact /> },
     { title: "Node", icon: <FaNodeJs /> },
-    { title: "Express", icon: <SiExpress />},
+    { title: "Express", icon: <SiExpress /> },
     { title: "MongoDB", icon: <SiMongodb /> },
   ],
 };
@@ -108,8 +107,10 @@ const Resume = () => {
           className=" flex flex-col xl:flex-row gap-[30px]"
         >
           <div className=" flex flex-col gap-3">
-            <div className=" text-2xl xl:text-4xl font-semibold">Why hire me.?</div>
-            <div className=" text-sm xl:text-md text-white/60 leading-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, earum.</div>
+            <div className="text-2xl xl:text-4xl text-center w-full font-semibold">
+              Resume
+            </div>
+            {/* <div className=" text-sm xl:text-md text-white/60 leading-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, earum.</div> */}
             <TabsList className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-1 lg:w-[350px] lg:h-[180px] lg:mx-auto xl:mx-0 gap-4">
               <TabsTrigger value="education"> education </TabsTrigger>
               <TabsTrigger value="skills"> skills </TabsTrigger>
@@ -124,7 +125,7 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[15px] text-center xl:text-left ">
                 <h3 className=" text-4xl font-bold ">{experience.title}</h3>
-                <p className=" max-w-[600px] text-white/60 mx-auto xl:mx-0 ">
+                <p className=" max-w-[650px] text-white/60 mx-auto xl:mx-0 leading-[1.8rem]">
                   {experience.description}
                 </p>
                 <ScrollArea className=" h-[400px] ">
@@ -157,7 +158,7 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[15px] text-center xl:text-left ">
                 <h3 className=" text-4xl font-bold ">{education.title}</h3>
-                <p className=" max-w-[600px] text-white/60 mx-auto xl:mx-0 ">
+                <p className=" max-w-[650px] text-white/60 mx-auto xl:mx-0 leading-[1.8rem] ">
                   {education.description}
                 </p>
                 <ScrollArea className=" h-[400px] ">
@@ -186,7 +187,7 @@ const Resume = () => {
             <TabsContent value="skills" className="w-full">
               <div className="flex flex-col gap-[15px] text-center xl:text-left ">
                 <h3 className=" text-4xl font-bold ">{skills.title}</h3>
-                <p className=" max-w-[600px] text-white/60 mx-auto xl:mx-0 ">
+                <p className=" max-w-[650px] text-white/60 mx-auto xl:mx-0 leading-[1.8rem] ">
                   {skills.description}
                 </p>
                 <ScrollArea className=" h-[400px] w-full ">
@@ -198,7 +199,9 @@ const Resume = () => {
                             <TooltipTrigger className=" w-full h-[120px] bg-[#4b4b4b] rounded-xl flex justify-center items-center group ">
                               <div className=" group-hover:text-accent transition-all duration-300 flex flex-col items-center">
                                 <h1 className="text-6xl">{skill.icon}</h1>
-                                <h3 className="lg:hidden capitalize ">{skill.title}</h3>
+                                <h3 className="lg:hidden capitalize ">
+                                  {skill.title}
+                                </h3>
                               </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -216,7 +219,7 @@ const Resume = () => {
             <TabsContent value="about" className="w-full">
               <div className="flex flex-col gap-[15px] text-center xl:text-left ">
                 <h3 className=" text-4xl font-bold ">{about.title}</h3>
-                <p className=" max-w-[600px] text-white/60 mx-auto xl:mx-0 ">
+                <p className=" max-w-[650px] text-white/60 mx-auto xl:mx-0 leading-[1.8rem] ">
                   {about.description}
                 </p>
                 <ScrollArea className=" h-[400px]">

@@ -8,3 +8,7 @@
     @apply font-primary bg-primary text-white leading-loose ;
   }
 }
+
+::-webkit-scrollbar{
+  display: none;
+}
