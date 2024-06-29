@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About Me",
   description:
-    "Passionate and dedicated individual with a keen interest in Software Development. Eager to apply academic knowledge to real-world challenges and continuously enhance skills in the technology field.",
+    "I'm a Passionate and dedicated person with a keen interest in Software Development. Eager to apply academic knowledge to real-world challenges and continuously enhance skills in the technology field.",
   info: [
     { title: "Name", value: "Harsh Masaye" },
     { title: "Email", value: "harshmasaye06@gmail.com" },

@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer base{
+@layer base {
   body {
-    @apply font-primary bg-primary text-white leading-loose ;
+    @apply font-primary bg-primary text-white leading-loose;
   }
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
