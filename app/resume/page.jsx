@@ -70,7 +70,6 @@ const education = {
       degree: "SSC",
       duration: "2008-2018",
     },
-    
   ],
 };
 
@@ -121,39 +120,6 @@ const Resume = () => {
 
           {/* content */}
           <div className="min-h-[70vh] w-full">
-            {/* experience */}
-            <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[15px] text-center xl:text-left ">
-                <h3 className=" text-4xl font-bold ">{experience.title}</h3>
-                <p className=" max-w-[650px] text-white/60 mx-auto xl:mx-0 leading-[1.8rem]">
-                  {experience.description}
-                </p>
-                <ScrollArea className=" h-[400px] ">
-                  <ul className=" grid grid-cols-1 lg:grid-cols-2 gap-[20px] ">
-                    {experience.info.map((item, index) => (
-                      <li
-                        key={index}
-                        className=" bg-[#4b4b4b] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-start lg:items-start gap-1 "
-                      >
-                        <span className="text-accent  font-semibold">
-                          {item.duration}
-                        </span>
-
-                        <div className=" flex flex-col items-start gap-1 ">
-                          <h4 className="text-xl font-extrabold capitalize">
-                            {item.role}
-                          </h4>
-                          <p>
-                            <span className="text-accent text-4xl">.</span>
-                            {item.company}
-                          </p>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
             {/* education */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[15px] text-center xl:text-left ">
@@ -239,6 +205,39 @@ const Resume = () => {
                               {item.href_link}
                             </a>
                           )}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+            {/* experience */}
+            <TabsContent value="experience" className="w-full">
+              <div className="flex flex-col gap-[15px] text-center xl:text-left ">
+                <h3 className=" text-4xl font-bold ">{experience.title}</h3>
+                <p className=" max-w-[650px] text-white/60 mx-auto xl:mx-0 leading-[1.8rem]">
+                  {experience.description}
+                </p>
+                <ScrollArea className=" h-[400px] ">
+                  <ul className=" grid grid-cols-1 lg:grid-cols-2 gap-[20px] ">
+                    {experience.info.map((item, index) => (
+                      <li
+                        key={index}
+                        className=" bg-[#4b4b4b] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-start lg:items-start gap-1 "
+                      >
+                        <span className="text-accent  font-semibold">
+                          {item.duration}
+                        </span>
+
+                        <div className=" flex flex-col items-start gap-1 ">
+                          <h4 className="text-xl font-extrabold capitalize">
+                            {item.role}
+                          </h4>
+                          <p>
+                            <span className="text-accent text-4xl">.</span>
+                            {item.company}
+                          </p>
                         </div>
                       </li>
                     ))}
