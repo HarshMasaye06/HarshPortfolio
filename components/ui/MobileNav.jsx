@@ -5,12 +5,13 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import { Button } from "./button";
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 
 const links = [
   { path: "/", name: "home" },
   // { path: "/services", name: "services" },
   { path: "/resume", name: "resume" },
-  { path: "/projects", name: "projects"},
+  { path: "/projects", name: "projects" },
   { path: "/contact", name: "contact" },
 ];
 
@@ -22,10 +23,16 @@ const MobileNav = () => {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className=" flex flex-col">
-        <div className="mt-20 mb-20 text-center text-2xl">
+        <div className="mt-20 mb-20 flex justify-center text-2xl">
           <Link href="/">
-            <h1 className="text-4xl font-semibold">
-            DevSite<span className="text-accent">.</span>
+            <h1 className="text-3xl flex items-center font-semibold">
+              <span className="text-accent relative bottom-0 ">
+                <MdKeyboardArrowLeft />
+              </span>
+              DevSite
+              <span className="text-accent  relative bottom-0 ">
+                <MdKeyboardArrowRight />
+              </span>
             </h1>
           </Link>
         </div>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Nav from "./Nav";
 import { Button } from "./button";
 import MobileNav from "./MobileNav";
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 
 const Header = () => {
   return (
@@ -9,8 +10,14 @@ const Header = () => {
       <div className=" container h-full mx-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/">
-          <h1 className="text-4xl font-semibold">
-          DevSite<span className="text-accent">.</span>
+          <h1 className="text-4xl flex items-center font-semibold">
+            <span className="text-accent ">
+              <MdKeyboardArrowLeft />
+            </span>
+            DevSite
+            <span className="text-accent ">
+              <MdKeyboardArrowRight />
+            </span>
           </h1>
         </Link>
 
