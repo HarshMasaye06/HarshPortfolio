@@ -102,7 +102,7 @@ const Resume = () => {
     >
       <div className=" container mx-auto">
         <Tabs
-          defaultValue="experience"
+          defaultValue="education"
           className=" flex flex-col xl:flex-row gap-[30px]"
         >
           <div className=" flex flex-col gap-3">
