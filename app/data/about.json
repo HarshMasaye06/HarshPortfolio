@@ -1,0 +1,32 @@
+{
+    "title": "About Me",
+    "description": "I'm a Passionate and dedicated person with a keen interest in Software Development. Eager to apply academic knowledge to real-world challenges and continuously enhance skills in the technology field.",
+    "info": [
+        {
+            "title": "Name",
+            "value": "Harsh Masaye"
+        },
+        {
+            "title": "Email",
+            "value": "harshmasaye06@gmail.com"
+        },
+        {
+            "title": "Phone",
+            "value": "+91 8104005291"
+        },
+        {
+            "title": "Experience",
+            "value": "Fresher"
+        },
+        {
+            "title": "LinkedIn",
+            "href_link": "linkedin.com/harshmasaye06",
+            "href": "https://www.linkedin.com/in/harshmasaye06/"
+        },
+        {
+            "title": "Github",
+            "href_link": "github.com/harshmasaye06",
+            "href": "https://github.com/HarshMasaye06"
+        }
+    ]
+}

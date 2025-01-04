@@ -3,14 +3,16 @@ import Nav from "./Nav";
 import { Button } from "./button";
 import MobileNav from "./MobileNav";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import TransitionLink from "../transitions/TransitionLink";
+
 
 const Header = () => {
   return (
-    <header className="  py-8 xl:py-12 text-white">
+    <header className=" py-8 xl:py-12 ">
       <div className=" container h-full mx-auto flex justify-between items-center">
         {/* logo */}
-        <Link href="/">
-          <h1 className="text-4xl flex items-center font-semibold">
+        <TransitionLink href="/">
+          <h1 className="text-4xl flex items-center font-semibold text-secondary">
             <span className="text-accent ">
               <MdKeyboardArrowLeft />
             </span>
@@ -19,7 +21,7 @@ const Header = () => {
               <MdKeyboardArrowRight />
             </span>
           </h1>
-        </Link>
+        </TransitionLink>
 
         {/* nav */}
         <div className=" hidden lg:flex xl:flex items-center gap-8">

@@ -1,0 +1,22 @@
+{
+    "icon": "assets/icons/badge.svg",
+    "title": "Education",
+    "description": "With a strong educational background in Information Technology, I am well-equipped with the knowledge and skills needed to excel in the tech industry.",
+    "info": [
+        {
+            "university": "Vasantdada patil pratisthan College of Engg.",
+            "degree": "B.E (AI & Data Science.)",
+            "duration": "2022-2025"
+        },
+        {
+            "university": "Goverment Polytechnic Mumbai.",
+            "degree": "Diploma (Info Tech.)",
+            "duration": "2018-2021"
+        },
+        {
+            "university": "St. Lawrence High School",
+            "degree": "SSC (Maharashtra State Board)",
+            "duration": "2008-2018"
+        }
+    ]
+}

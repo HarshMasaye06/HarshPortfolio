@@ -7,15 +7,16 @@ import Stats from "@/components/ui/Stats";
 import Socials from "@/components/ui/Socials";
 import Link from "next/link";
 
+
 export default function Home() {
   return (
     <main>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { delay: 0.4, duration: 0.4, ease: "easeInOut" },
-        }}
+        // initial={{ opacity: 0 }}
+        // animate={{
+        //   opacity: 1,
+        //   transition: { delay: 1.1, duration: 0.4, ease: "easeInOut" },
+        // }}
         className="min-h-[80vh]  flex items-center justify-center py-12 xl:py-0"
       >
         <div className=" container">
@@ -27,7 +28,7 @@ export default function Home() {
                 Hello I'm <br />
                 <span className="text-accent">Harsh Masaye </span>
               </h1>
-              <p className=" whitespace-pre-wrap lg:w-[70%] ">
+              <p className=" whitespace-pre-wrap lg:w-[70%] text-secondary ">
                 An aspiring software engineer experienced in building impactful
                 and user-friendly websites. Specializing in front-end
                 technologies, passionate about modern web standards and

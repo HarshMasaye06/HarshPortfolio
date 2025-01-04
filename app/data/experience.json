@@ -1,0 +1,12 @@
+{
+    "icon": "assets/icons/badge.svg",
+    "title": "Experience",
+    "description": "Although I am a fresher, my college projects have provided me with a solid foundation in AI and Data Science. I am enthusiastic about leveraging my knowledge to contribute to innovative projects and grow within the tech industry.",
+    "info": [
+        {
+            "company": "College Projects",
+            "role": "Fresher",
+            "duration": "Present"
+        }
+    ]
+}

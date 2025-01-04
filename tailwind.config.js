@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -19,16 +19,35 @@ module.exports = {
         xl: "1200px",
       },
     },
-    fontFamily:{
-      primary: 'var(--font-jetbrainsMono)'
+    fontFamily: {
+      primary: "var(--font-jetbrainsMono)",
     },
     extend: {
-      colors:{
-        primary: '#252525',
+      colors: {
+        primary: "#ffffff",
+        secondary: "#272727",
         accent: {
-          DEFAULT: '#00ff99',
-          hover: '#00e187',
-        }
+          // green-accents
+          // DEFAULT: "#00ff99",
+          // hover: "#00e187",
+          // blue-accents
+          // DEFAULT: "#038aff",
+          // hover: "#2c82c9",
+
+          // red-accents
+          // text: "#17080a",
+          // background: "#fbeff1",
+          hover: "#cd374e",
+          // secondary: "#e68997",
+          // accent: "#c22940",
+
+          // red-accents-dark
+          // text: "#f7e8ea",
+          // background: "#100406",
+          // DEFAULT: "#c83248",
+          // secondary: "#761927",
+          DEFAULT: "#d63d54",
+        },
       },
       keyframes: {
         "accordion-down": {
@@ -47,4 +66,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

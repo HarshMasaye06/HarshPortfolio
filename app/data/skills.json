@@ -1,0 +1,39 @@
+{
+    "icon": "assets/icons/badge.svg",
+    "title": "Skills",
+    "description": "Proficient in a variety of modern web technologies and tools. Always eager to learn and adapt to new technologies. Skilled in both front-end and back-end development.",
+    "info": [
+        {
+            "title": "HTML",
+            "icon": "FaHtml5"
+        },
+        {
+            "title": "CSS",
+            "icon": "FaCss3"
+        },
+        {
+            "title": "tailwind css",
+            "icon": "SiTailwindcss"
+        },
+        {
+            "title": "JavaScript",
+            "icon": "FaJs"
+        },
+        {
+            "title": "React",
+            "icon": "FaReact"
+        },
+        {
+            "title": "Node",
+            "icon": "FaNodeJs"
+        },
+        {
+            "title": "Express",
+            "icon": "SiExpress"
+        },
+        {
+            "title": "MongoDB",
+            "icon": "SiMongodb"
+        }
+    ]
+}
