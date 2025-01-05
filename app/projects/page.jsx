@@ -1,7 +1,6 @@
 "use client";
 
 import ProjectDisplayCard from "@/components/projectDisplayCard";
-import ProjectDisplayCard2 from "@/components/projectDisplayCard2";
 import { motion } from "framer-motion";
 
 const ProjectsGrid = () => {
