@@ -1,25 +1,26 @@
 "use client";
 
 import ProjectDisplayCard from "@/components/projectDisplayCard";
+import ProjectDisplayCard2 from "@/components/projectDisplayCard2";
 import { motion } from "framer-motion";
 
 const ProjectsGrid = () => {
   return (
-    <motion.div
-      // initial={{ opacity: 0 }}
-      // animate={{
-      //   opacity: 1,
-      //   transition: { delay: 1.1, duration: 0.4, ease: "easeInOut" },
-      // }}
-      className="min-h-[80vh] px-2 xl:px-4"
-    >
+    <motion.div className="min-h-[80vh] ">
       <div className="flex py-8 justify-center ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 ">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 scroll-smooth">
+          {[
+            1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3,
+            4, 5, 1, 2, 3, 4, 5,
+          ].map((i) => (
             <ProjectDisplayCard
               key={i}
               projectName={`Portfolio ${i}`}
-              imageSrc="/assets/01ProjectPortfolio.png"
+              imageSrc={
+                i % 2 == 0
+                  ? `/assets/01ProjectPortfolio.png`
+                  : `/assets/02ProjectEcommerce.png`
+              }
             />
           ))}
         </div>
